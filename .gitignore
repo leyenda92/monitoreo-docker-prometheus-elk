@@ -1,0 +1,7 @@
+node_modules/
+logs/
+.env
+*.log
+prometheus_data/
+grafana_data/
+elasticsearch_data/
