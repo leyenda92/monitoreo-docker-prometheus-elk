@@ -1,0 +1,11 @@
+groups:
+  - name: app-alerts
+    rules:
+      - alert: AppDown
+        expr: up{job="my-app"} == 0
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Aplicación caída"
+          description: "La aplicación no responde en /metrics"
